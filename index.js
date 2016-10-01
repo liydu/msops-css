@@ -3,6 +3,11 @@ var postcss = require('postcss');
 // list of all plugins
 var processors = [
   {
+    plugin: require('autoprefixer'),
+    namespace: 'autoprefixer',
+    defaults: {}
+  },
+  {
     plugin: require('postcss-import'),
     namespace: 'import',
     defaults: {}
@@ -62,6 +67,16 @@ var processors = [
   {
     plugin: require('postcss-selector-not'),
     namespace: 'not',
+    defaults: {}
+  },
+  {
+    plugin: require('postcss-fontpath'),
+    namespace: 'fontpath',
+    defaults: {}
+  },
+  {
+    plugin: require('postcss-reporter'),
+    namespace: 'reporter',
     defaults: {}
   }
 ];

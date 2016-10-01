@@ -1,6 +1,6 @@
 {
   "name": "msops-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use Sass-like markup in CSS, based on PostCSS with only up to date and essential plugins. Inspired by Precss.",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "postcss",
     "sass",
     "postcss-plugin",
+    "autoprefixer",
     "variables",
     "conditionals",
     "nested",
@@ -26,7 +27,10 @@
     "extends",
     "placeholders",
     "colors",
-    "calcs"
+    "calcs",
+    "fontpath",
+    "responsive",
+    "reporter"
   ],
   "author": "Liya Du",
   "license": "MIT",
@@ -35,22 +39,27 @@
   },
   "homepage": "https://github.com/liydu/msops-css#readme",
   "dependencies": {
+    "autoprefixer": "^6.5.0",
     "postcss": "^5.0.19",
     "postcss-advanced-variables": "^1.2.2",
     "postcss-calc": "^5.2.0",
     "postcss-color-function": "^2.0.1",
     "postcss-custom-media": "^5.0.1",
+    "postcss-fontpath": "^0.3.0",
     "postcss-import": "^8.1.0",
     "postcss-media-minmax": "^2.1.2",
-    "postcss-mixins": "^4.0.1",
+    "postcss-mixins": "^5.2.0",
     "postcss-nested": "^1.0.0",
     "postcss-nesting": "^2.3.1",
     "postcss-property-lookup": "^1.2.1",
+    "postcss-reporter": "^1.4.1",
+    "postcss-responsive-type": "^0.4.0",
     "postcss-selector-matches": "^2.0.1",
     "postcss-selector-not": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^2.7.0",
-    "eslint-config-airbnb": "^6.2.0"
+    "eslint": "^3.7.0",
+    "eslint-config-airbnb-base": "^8.0.0",
+    "eslint-plugin-import": "^1.16.0"
   }
 }
